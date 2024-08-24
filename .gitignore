@@ -1,0 +1,18 @@
+# Ignorar archivos de entorno
+.env
+# Ignorar archivos de configuración con información sensible
+docker-compose.override.yml
+
+config_bazarr/
+config_jackett/
+config_jellyfin/
+config_jellyseerr/
+config_lidarr/
+config_ombi/
+config_privtransmission/
+config_radarr/
+config_readarr/
+config_sonarr/
+config_transmission/
+config_whisparr/
+media/

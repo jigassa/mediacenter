@@ -7,8 +7,8 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Mexico_City
-      - JELLYFIN_PublishedServerUrl=https://media.0es3cloud.com/
+      - TZ=${TZ}
+      - JELLYFIN_PublishedServerUrl=${JELL_URL}
     volumes:
       - ./config_jellyfin:/config
       - ./media:/media
@@ -25,7 +25,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Mexico_City
+      - TZ=${TZ}
       - USER=${TRANS_USER}
       - PASS=${TRANS_PASS}
     volumes:
@@ -43,7 +43,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Mexico_City
+      - TZ=${TZ}
     volumes:
       - ./config_jellyseerr:/app/config
     ports:
@@ -56,7 +56,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Mexico_City
+      - TZ=${TZ}
     volumes:
       - ./config_bazarr:/config
       - ./media:/media
@@ -72,7 +72,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Mexico_City
+      - TZ=${TZ}
     volumes:
       - ./config_jackett:/config
     ports:
@@ -86,7 +86,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Mexico_City
+      - TZ=${TZ}
     volumes:
       - ./config_radarr:/config
       - ./media/Peliculas:/movies
@@ -101,7 +101,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Mexico_City
+      - TZ=${TZ}
     volumes:
       - ./config_sonarr:/config
       - ./media/Series:/tv
@@ -116,7 +116,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Mexico_City
+      - TZ=${TZ}
     volumes:
       - ./config_lidarr:/config
       - ./media/Musica:/music
@@ -131,7 +131,7 @@ services:
     environment:
       - PUID=1000
       - PGID=1000
-      - TZ=America/Mexico_City
+      - TZ=${TZ}
     volumes:
       - ./config_readarr:/config
       - ./media/Libros:/books
